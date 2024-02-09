@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Fancy Form</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="navigation.js"></script>
+
+
+</head>
+
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <section class="header">
+    <nav>
+
+      <div class="nav-links" id="navLinks">
+        <img class="pic" src="images/close-icon.png" style="width: 20px;" onclick="hideMenu()">
+
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="category.html">CATEGORY</a></li>
+          <li><a href="feedback.html">FEEDBACK</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <img class="pic" src="images/menu-icon.png" style="width: 20px;" onclick="showMenu()">
+
+    </nav>
+
+    <section id="form">
+
+      <div class="container">
+
+        <div class="form-sections">
+
+          <div class="Form-l">
+            <h1>Get In Touch</h1>
+            <div class="line"></div>
+            <p>If you have any questions about stamp collecting or want to share your favourite stamps with me, feel
+              free
+              to contact me! You can reach me at [Email Address] or through the contact form below. :)</p><br>
+
+
+            <h4>Address</h4>
+            <span>No 24, Selagama, Matale.</span>
+            <hr><br><br>
+
+
+            <h4>Phone</h4>
+            <span>(+94)** *******</span>
+            <hr>
+            <br>
+            <br>
+
+
+            <h4>E-Mail</h4>
+            <span><a href="mailto:nagollahl@gmail.com" style="color: aliceblue;">Na**********.com</a></span>
+            <br>
+            <span><a href="mailto:s22010108@ousl.lk" style="color: aliceblue;">s***********l.lk</a></span>
+            <hr>
+            <br>
+
+
+            <a href="https://web.facebook.com/hasindu.lakshan.1272/" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/h_nagolla" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwishc6JyYz-AhVfcGwGHZGHBrcQPAgI"
+              class="fa fa-google" target="_blank"></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://www.youtube.com/channel/UCEyKFEJJ-zlQb7TDwCxKmPg" target="_blank"
+              class="fa fa-youtube"></a>
+          </div>
+
+
+          <div class="Form-r-side">
+            <h1>Contact Us</h1>
+            <div class="line"></div>
+
+            <form>
+              <h5>Name:</h5>
+              <input type="text">
+              <br>
+              <br>
+              <h5>E-mail:</h5>
+              <input type="email" id="email">
+              <br>
+              <br>
+              <h5>Phone</h5>
+              <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+              <br>
+              <br>
+              <h5>Type massage:</h5>
+              <textarea cols="50" rows="7"></textarea>
+              <br>
+              <button value="Send" id="send">Send</button>
+
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </section>
+
+
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-200px"
+    }
+  </script>
+
+</body>
+
+</html>

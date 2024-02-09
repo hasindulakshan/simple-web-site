@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="navigation.js"></script>
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+
+            <div class="nav-links" id="navLinks">
+                <img class="pic" src="images/close-icon.png" style="width: 20px;" onclick="hideMenu()">
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="category.html">CATEGORY</a></li>
+                    <li><a href="feedback.html">FEEDBACK</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <img class="pic" src="images/menu-icon.png" style="width: 20px;" onclick="showMenu()">
+
+        </nav>
+
+
+        <section class="category">
+
+            <h1>Choose Your Choice</h1>
+            <p>Find and Collect more Information</p>
+
+
+            <div class="description">
+                <div class="sub-description">
+                    <h3>Local Stamps</h3>
+                    <p class="p"> I would be happy to help you collect more information about local stamps! Can you
+                        please let me know
+                        which country or region you are interested in? That way, I can give you more targeted
+                        information.
+                    </p>
+                </div>
+                <div class="sub-description">
+                    <h3>Foreign Stamps</h3>
+                    <p class="p"> There are many resources that you may find useful, including the history of foreign
+                        stamps, designs,
+                        and
+                        collecting tips. I hope you find this information helpful!</p>
+                </div>
+                <div class="sub-description">
+                    <h3>Special Info</h3>
+                    <p class="p"> Further, more information about stamps and history of stamps can be found on this web
+                        page. <br> I
+                        hope you
+                        find this information helpful!</p>
+                </div>
+
+
+            </div>
+            <p class="ph">Stamp collecting is a popular hobby around the world. Stamp collectors are also known as
+                philatelists. <br> One can explore the history and culture of different countries through their postage
+                stamps.</p>
+    
+            <p class="ph">Collecting stamps can be a fun and fulfilling hobby for people of all ages. Many collectors begin by
+                saving stamps from letters they receive or buying inexpensive stamps  br
+                from dealers or online
+                marketplaces. As they learn more about stamp collecting they begin to focus on specific themes or
+                countries or invest in rarer or more valuable stamps.</p>
+    
+            <p class="ph">Stamp collectors often use specialized tools and resources to identify and organize their collections. For
+                example, stamp albums provide a way to display and store stamps, while catalogs and online databases can
+                help collectors learn more about individual stamps and their value.</p>
+        </section>
+        
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+
+</html>

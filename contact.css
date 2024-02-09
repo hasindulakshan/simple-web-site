@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  box-sizing: border-box;
+  color: rgba(248, 248, 248, 0.938);
+
+}
+
+#form {
+  align-items: center;
+
+}
+
+#form .container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+
+.form-sections {
+  margin-top: 120px;
+  display: grid;
+  grid-gap: 5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+.Form-l h1 {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+.Form-l h4 {
+  padding: 0;
+  margin: 0;
+  color: rgb(243, 235, 235);
+}
+
+.line {
+  border-bottom: 2px solid rgb(243, 6, 6);
+  width: 8%;
+  margin-left: 0;
+}
+
+.Form-l span {
+  color: rgb(187, 182, 182);
+  font-weight: bold;
+}
+
+.Form-l hr {
+  width: 50px;
+  margin-left: 0;
+  border: 1px solid rgb(53, 52, 52);
+}
+
+
+.fa {
+  padding: 8px;
+  font-size: 18px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: rgb(187, 182, 182);
+}
+
+.fa:hover {
+  color: red;
+}
+
+
+form {
+  padding-top: 2rem;
+}
+
+form h5 {
+  padding: 0;
+  margin: 0;
+  color: aliceblue;
+}
+
+form input {
+  padding: 10px;
+  width: 430px;
+  border: none;
+  background-color: rgba(136, 133, 133, 0.6);
+  color: aliceblue;
+  border-radius: 5px;
+  outline-color: black;
+}
+
+form textarea {
+  padding: 0.6rem;
+  width: 430px;
+  border: none;
+  background-color: rgba(136, 133, 133, 0.6);
+  color: aliceblue;
+  border: none;
+  outline: none;
+}
+
+#form button {
+  width: 100px;
+  background: red;
+  padding: 5px;
+  outline: none;
+  border-color: transparent;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 0.9rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+
+/* media queries */
+
+
+@media (max-width: 700px) {
+
+  #form .form-sections {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* background image  */
+
+
+  #form {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(images/contactb.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: 100%;
+  }
+
+  .form-sections .Form-r-side {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  /* for socail media icons */
+
+
+  .fa {
+    padding: 8px;
+    font-size: 18px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+  }
+}
